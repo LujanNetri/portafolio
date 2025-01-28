@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-
 /* Grid layout */
-
 .grid_container
 {
     display: grid;
@@ -42,7 +40,6 @@
     color: #7562E0;
 }
 
-
 .nav-link
 {
     color: white;
@@ -72,8 +69,6 @@ footer div i:hover
     color: #7562E0; 
 }
 
-
-
 /*ARCHIVO INDEX.HTML*/
 main
 {
@@ -97,7 +92,6 @@ main
     margin-bottom: 15px;
 }
 
-
 body
 {
     background-color:#1d1d2e; 
@@ -109,7 +103,8 @@ h1,h2,h3,p
     margin-bottom: 10px;
 }
 
-.foto {
+.foto 
+{
     text-align: center; 
 }
 
@@ -135,7 +130,6 @@ h1,h2,h3,p
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-
 .button a 
 {
     text-decoration: none;
@@ -148,7 +142,6 @@ h1,h2,h3,p
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
     transform: translateY(1px);
 }
-
 /*FIN ARCHIVO INDEX.HTML*/
 
 /*ARCHIVO ABOUT ME.HTML*/
@@ -162,11 +155,12 @@ h1,h2,h3,p
     padding: 20px;  
 }
 
-.about_me_content {
+.about_me_content 
+{
     text-align: center;
     color: white;
     padding: 20px;
-  }
+}
 .about_me_content h2
 {
     color: #7562E0;
@@ -192,10 +186,11 @@ h1,h2,h3,p
     background-color: #1d1d2e;
 }
 
-.card:hover {
+.card:hover 
+{
     transform: scale(1.05);
     box-shadow: 0 8px 12px #5a48c2;
-  }
+}
 
 .card h3
 {
@@ -210,7 +205,6 @@ h1,h2,h3,p
     line-height: 1.5;
     margin: 0;
     overflow: hidden;
-
 }
 /*FIN ARCHIVO ABOUT ME.HTML*/
 
@@ -267,7 +261,6 @@ h1,h2,h3,p
     padding-left: 10px;
 }
 
-
 .experience_content h3
 {
     color: #7562E0;
@@ -276,17 +269,7 @@ h1,h2,h3,p
     margin-bottom: 10px;
 }
 
-
 /*FIN ARCHIVO EXPERIENCE.HTML*/
-/* SECTOR FOOTER */
-.grid_item_footer {
-    grid-area: footer;
-    background-color: #1A1A29;
-    text-align: center;
-    justify-content: space-between;
-    padding: 20px 50px;
-}
-
 
 /* ARCHIVO GALLERY.HTML */
 .grid_item_gallery
@@ -499,14 +482,13 @@ form input[type="Submit"], form input[type="reset"]
 
     /* About_me.html */
     .grid_container_abt_me
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
 
     /* gallery.html */
-
     .gallery_content
     {
         padding: 10px;
@@ -548,7 +530,6 @@ form input[type="Submit"], form input[type="reset"]
         text-align: justify;
     }
 
-
     .carousel
     {
         flex: 1 1 auto;
@@ -588,7 +569,6 @@ form input[type="Submit"], form input[type="reset"]
     {
         width: 100%;
         text-align: center;
-
     }
 
     .form_container form
