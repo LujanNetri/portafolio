@@ -1,0 +1,23 @@
+/*footer*/
+footer
+{
+    grid-area: footer;
+    background-color: $primary-color;
+
+    div
+    {
+        i:hover
+        {
+            color: $secondary-color;
+        }
+    }
+
+    p 
+    {
+        color: #b9b8c4;
+        &.fw-bold 
+        {
+            color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+/*experience.html*/
+.experience 
+{
+    padding: $px-size-2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience_content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $px-size-2;
+    margin-top: 40px;
+    margin: $px-size-2 auto;
+    padding: $px-size-2;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid $secondary-color;
+    box-shadow: $box-shadow;
+    border-radius: $px-size-1;
+    background-color: #28283a;
+
+    h3
+    {
+        color: $secondary-color;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: $px-size-1;
+    }
+}
+
+.carousel
+{
+    flex: 1 1 500px;
+    max-width: 100%;
+    border-radius: $px-size-1;
+    overflow: hidden;
+
+    &-item img
+    {
+        max-height: 500px;
+        object-fit: cover;
+        width: auto;
+        border-radius: $px-size-1;
+    }
+}
+
+.experience_text
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+
+    ul
+    {
+        padding-left: $px-size-1;
+    }
+}
+

@@ -1,0 +1,73 @@
+/*index.html*/
+main 
+{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: $px-size-2;
+    gap: $px-size-2;
+}
+
+.home_content
+{
+    text-align: center;
+    line-height: 1.8;
+
+    h3,h1,p
+    {
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
+body
+{
+    background-color: $background-color;
+    color: $text-color;
+}
+
+h1,h2,h3,p
+{
+    margin-bottom: $px-size-1;
+}
+
+.foto
+{
+    text-align: center;
+
+    img
+    {
+        max-width: 90%;
+        height: auto;
+        max-height: 350px;
+        margin: 0 auto;
+    }
+}
+
+.button
+{
+    display: inline-block;
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    padding: $px-size-1 $px-size-2;
+    margin-top: $px-size-1;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+
+    a
+    {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    &:hover
+    {
+        background-color: #5a48c2;
+        box-shadow: $box-shadow;
+        transform: translateY(1px);
+    }
+}

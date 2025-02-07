@@ -1,0 +1,64 @@
+/*About_me.html*/
+.about_me
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: $px-size-2;
+}
+
+.about_me_content
+{
+    text-align: center;
+    color: $text-color;
+    padding: $px-size-2;
+
+    h2
+    {
+        color: $secondary-color;
+        font-size: 2rem;
+        margin-bottom: $px-size-1;
+    }
+}
+
+.grid_container_abt_me
+{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,1fr));
+    gap: $px-size-2;
+}
+
+.card 
+{
+    border: 2px solid $secondary-color;
+    border-radius: $px-size-1;
+    padding: $px-size-2;
+    margin: 5px 0;
+    color: $text-color;
+    box-shadow: $box-shadow;
+    background-color: $background-color;
+
+    &:hover
+    {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px #5a48c2;
+    }
+
+    h3 
+    {
+        font-size: 1.5rem;
+        color: $secondary-color;
+        margin-bottom: $px-size-1;
+    }
+
+    p 
+    {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 0;
+        overflow: hidden;
+    }
+}
+
