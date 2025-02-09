@@ -37,10 +37,7 @@
 
 .form_container 
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(column, flex-start,center);
     width: 50%;
     padding: $px-size-2;
     text-align: center;
@@ -59,14 +56,7 @@
 
     input, textarea
     {
-        width: 100%;
-        max-width: 500px;
-        padding: $px-size-1;
-        margin-bottom: 15px;
-        border: 2px solid $secondary-color;
-        border-radius: 5px;
-        background-color: $background-color;
-        color: $text-color;
+        @include form-input;
     } 
 
     textarea 

@@ -1,12 +1,13 @@
 @import 'utilidades/variables';
-@import 'utilidades/reset';
-@import 'utilidades/grid';
-@import 'utilidades/header';
-@import 'utilidades/footer';
-@import 'utilidades/index';
-@import 'utilidades/about';
-@import 'utilidades/_experience';
-@import 'utilidades/gallery';
-@import 'utilidades/contact';
-@import 'utilidades/media';
+@import 'utilidades/mixin';
+@import 'general/reset';
+@import 'general/grid';
+@import 'general/header';
+@import 'general/footer';
+@import 'general/index';
+@import 'general/about';
+@import 'general/experience';
+@import 'general/gallery';
+@import 'general/contact';
+@import 'general/media';
 

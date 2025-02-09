@@ -1,0 +1,96 @@
+@mixin flex($direction, $justify, $align)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+};
+
+@mixin button
+{
+    .button
+    {
+        display: inline-block;
+        background-color:#7562E0;
+        border: none;
+        border-radius: 5px;
+        padding: $px-size-1 $px-size-1;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: $box-shadow;
+        transition: all 0.3 ease-in-out;
+
+        &:hover
+        {
+            background-color: #5a48c2;
+            box-shadow: $box-shadow;
+            transform: translateY(1px);
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    
+};
+
+@mixin grid-layout
+{
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+};
+
+@mixin grid ($column)
+{
+    display: grid;
+    grid-template-columns: $column;
+    gap: $px-size-2;
+};
+
+@mixin card 
+{
+    border: 2px solid $secondary-color;
+    border-radius: $px-size-1;
+    padding: $px-size-2;
+    color: $text-color;
+    background-color: $background-color;
+    box-shadow: $box-shadow;
+    transition: all 0.3s ease-in-out;
+
+    &:hover 
+    {
+        transform: scale(1.05);
+        box-shadow: $box-shadow;
+    }
+
+}
+
+@mixin form-input 
+{
+    width: 100%;
+    max-width: 500px;
+    padding: $px-size-1;
+    margin-bottom: 15px;
+    border: 2px solid #7562E0;
+    border-radius: 5px;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+@mixin img 
+{
+    border-radius: $px-size-1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 12/5;
+    object-fit: cover;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: $px-size-2;
+}

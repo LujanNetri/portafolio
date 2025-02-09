@@ -1,10 +1,7 @@
 /*About_me.html*/
 .about_me
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column,center,center);
     text-align: center;
     padding: $px-size-2;
 }
@@ -25,26 +22,12 @@
 
 .grid_container_abt_me
 {
-    display: grid;
-    grid-template-columns: repeat(3,minmax(300px,1fr));
-    gap: $px-size-2;
+    @include grid(repeat(3, minmax(300px, 1fr)));
 }
 
 .card 
 {
-    border: 2px solid $secondary-color;
-    border-radius: $px-size-1;
-    padding: $px-size-2;
-    margin: 5px 0;
-    color: $text-color;
-    box-shadow: $box-shadow;
-    background-color: $background-color;
-
-    &:hover
-    {
-        transform: scale(1.05);
-        box-shadow: 0 8px 12px #5a48c2;
-    }
+    @include card;
 
     h3 
     {

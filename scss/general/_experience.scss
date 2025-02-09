@@ -8,10 +8,7 @@
 
 .experience_content 
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(column,center,center);
     gap: $px-size-2;
     margin-top: 40px;
     margin: $px-size-2 auto;
@@ -50,9 +47,7 @@
 
 .experience_text
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex(row,none,center);
     font-size: 1rem;
 
     ul

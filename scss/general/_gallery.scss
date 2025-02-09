@@ -1,0 +1,55 @@
+/*Gallery.html*/
+.grid_item_gallery
+{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.gallery_content
+{
+    @include flex(column, center,center);
+    text-align: center;
+    gap: $px-size-1;
+    padding: $px-size-2;
+    box-sizing: border-box;
+}
+
+.text_content_gallery
+{
+    width: 60%;
+}
+
+.gallery_grid
+{
+    @include grid(repeat(3, 2fr));
+    margin-top: $px-size-2;
+}
+
+.gallery_card
+{
+   @include card;
+
+    h3 
+    {
+        font-size: 1.5rem;
+        color: $secondary-color;
+        margin-bottom: $px-size-1;
+    }
+
+    p
+    {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+.foto_gallery
+{
+    img
+    {
+        @include img
+    }
+}
+
