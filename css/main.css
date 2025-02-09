@@ -99,6 +99,7 @@ h1, h2, h3, p {
   border: none;
   border-radius: 5px;
   padding: 10px 10px;
+  margin-top: 10px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -363,7 +364,27 @@ form input[type=submit], form input[type=reset] {
   cursor: pointer;
 }
 
-/*Media Queries for esponsives*/
+/*Media query para tablet*/
+@media (max-width: 1024px) {
+  .grid_container_abt_me {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+  .about_me_content {
+    padding: 10px;
+  }
+  .about_me_content p {
+    font-size: 1.3rem;
+  }
+  .card {
+    padding: 15px;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/*Media Query para celular*/
 @media (max-width: 768px) {
   .grid_container {
     display: grid;
@@ -396,8 +417,11 @@ form input[type=submit], form input[type=reset] {
   /*about_me.html*/
   .grid_container_abt_me {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 20px;
+  }
+  .about_me_content p {
+    font-size: 1.2rem;
   }
   /*gallery.html*/
   .gallery_content {

@@ -1,4 +1,4 @@
-/*Media Queries for esponsives*/
+/*Media Query para celular*/
 @media(max-width: 768px)
 {
     .grid_container
@@ -36,9 +36,14 @@
     /*about_me.html*/
     .grid_container_abt_me
     {
-        @include grid(repeat(auto-fit,minmax(300px,1fr)));
+        @include grid(repeat(1,minmax(300px,1fr)));
     }
 
+    .about_me_content p 
+    {
+        font-size: 1.2rem;
+    }
+    
     /*gallery.html*/
     .gallery_content
     {

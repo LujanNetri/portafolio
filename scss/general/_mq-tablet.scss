@@ -1,0 +1,30 @@
+/*Media query para tablet*/
+@media (max-width: 1024px)
+{
+    .grid_container_abt_me
+    {
+        grid-template-columns: repeat(2, minmax(300px,1fr));
+    }
+
+    .about_me_content 
+    {
+        padding: 10px;
+    }
+
+    .about_me_content p 
+    {
+        font-size: 1.3rem;
+    }
+
+    .card 
+    {
+        padding: 15px;
+    }
+
+    footer 
+    {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}
