@@ -31,8 +31,10 @@
 }
 
 .navbar-brand {
-  pointer-events: none;
-  text-decoration: none;
+  color: white;
+}
+
+.navbar-brand:hover {
   color: #7562E0;
 }
 
@@ -315,6 +317,9 @@ h1, h2, h3, p {
   width: 50%;
   font-size: 1rem;
   line-height: 1.6;
+}
+.connect_with_me div i:hover {
+  color: #7562E0;
 }
 
 .form_container {

@@ -23,8 +23,11 @@
 
 .navbar-brand
 {
-    pointer-events: none;
-    text-decoration: none;
+    color: $text-color;
+}
+
+.navbar-brand:hover
+{
     color: $secondary-color;
 }
 
